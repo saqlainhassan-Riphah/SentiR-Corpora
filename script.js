@@ -1,14 +1,20 @@
-fetch("data.json")
-  .then(response => response.json())
-  .then(data => {
+document.addEventListener("DOMContentLoaded", function () {
 
-    document.getElementById("d1_docs").innerText = data.dataset1.size_docs;
-    document.getElementById("d1_tokens").innerText = data.dataset1.tokens;
+    fetch("./data.json")
+        .then(res => res.json())
+        .then(data => {
 
-    document.getElementById("d2_docs").innerText = data.dataset2.size_docs;
-    document.getElementById("d2_tokens").innerText = data.dataset2.tokens;
+            // Dataset 1
+            document.getElementById("d1_docs").innerText = data.dataset1.size_docs;
+            document.getElementById("d1_tokens").innerText = data.dataset1.tokens;
 
-  })
-  .catch(error => {
-    console.log("Data loading error:", error);
-  });
+            // Dataset 2
+            document.getElementById("d2_docs").innerText = data.dataset2.size_docs;
+            document.getElementById("d2_tokens").innerText = data.dataset2.tokens;
+
+        })
+        .catch(err => {
+            console.log("JSON load error:", err);
+        });
+
+});
