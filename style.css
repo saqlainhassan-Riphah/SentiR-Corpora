@@ -1,90 +1,71 @@
 body {
     margin: 0;
-    font-family: "Segoe UI", Arial;
-    background: #f4f6f9;
-}
-
-/* 🧭 SIDEBAR */
-.sidebar {
-    position: fixed;
-    width: 220px;
-    height: 100%;
-    background: #1f2937;
-    color: white;
-    padding: 20px;
-}
-
-.sidebar h2 {
-    color: orange;
-}
-
-.sidebar a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    margin: 15px 0;
-    padding: 8px;
-    border-radius: 5px;
-}
-
-.sidebar a:hover {
-    background: orange;
-    color: black;
-}
-
-/* 📊 MAIN AREA */
-.main {
-    margin-left: 240px;
-    padding: 20px;
+    font-family: Arial;
+    background: #f5f5f5;
 }
 
 /* HEADER */
 .header {
-    background: orange;
+    background: #d67a00;
     color: white;
-    padding: 20px;
-    border-radius: 10px;
     text-align: center;
+    padding: 25px;
 }
 
-/* GRID STATS */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+/* SEARCH */
+.search-box {
+    text-align: center;
+    margin: 20px;
+}
+
+.search-box input {
+    width: 60%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* STATS */
+.stats {
+    display: flex;
+    justify-content: center;
     gap: 15px;
-    margin-top: 20px;
+    margin: 20px;
 }
 
-/* CARDS */
-.card {
+.stat-card {
     background: white;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
-/* PANELS */
-.panel {
+/* DATASET GRID */
+.dataset-grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+}
+
+.dataset-card {
     background: white;
-    margin-top: 20px;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dataset-card:hover {
+    transform: scale(1.05);
+}
+
+/* INFO */
+.info {
+    background: white;
+    margin: 20px;
     padding: 20px;
     border-radius: 10px;
-}
-
-/* RESPONSIVE */
-@media(max-width: 900px){
-    .grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .sidebar {
-        position: relative;
-        width: 100%;
-        height: auto;
-    }
-
-    .main {
-        margin-left: 0;
-    }
 }
