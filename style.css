@@ -1,20 +1,14 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* GLOBAL */
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: linear-gradient(135deg, #1e293b, #334155);
-    color: #f8fafc;
-    min-height: 100vh;
+    margin: 0;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    color: #e2e8f0;
 }
 
-/* MAIN CONTAINER */
+/* CONTAINER */
 .container {
-    max-width: 900px;
+    max-width: 1100px;
     margin: auto;
     padding: 40px 20px;
     text-align: center;
@@ -22,65 +16,66 @@ body {
 
 /* HEADER */
 .header h1 {
-    font-size: 2.8rem;
-    margin-bottom: 8px;
+    font-size: 3rem;
+    color: #f59e0b;
 }
 
 .header p {
-    opacity: 0.85;
-    margin-bottom: 35px;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+/* GRID LAYOUT */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    align-items: stretch;
+}
+
+/* BOX STYLES */
+.side-box, .center-box {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    transition: 0.3s ease;
+}
+
+.side-box:hover, .center-box:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.08);
+}
+
+/* CENTER ABOUT BOX */
+.center-box {
+    font-size: 1.1rem;
+    line-height: 1.7;
 }
 
 /* NAVIGATION */
 .nav {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .nav a {
     text-decoration: none;
-    color: #e5e7eb;
-    background: rgba(255, 255, 255, 0.08);
-    padding: 12px 22px;
-    border-radius: 12px;
-    transition: all 0.3s ease;
+    color: #f59e0b;
+    margin: 10px;
+    padding: 10px 18px;
+    border: 1px solid #f59e0b;
+    border-radius: 25px;
+    transition: 0.3s ease;
 }
 
 .nav a:hover {
-    background: rgba(255, 255, 255, 0.25);
-    transform: translateY(-3px);
+    background: #f59e0b;
+    color: #0f172a;
 }
 
-/* CARDS */
-.card {
-    background: rgba(255, 255, 255, 0.08);
-    padding: 30px;
-    border-radius: 18px;
-    margin-bottom: 30px;
-    text-align: left;
-    animation: fadeUp 0.6s ease;
-}
-
-.card h2 {
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.card p {
-    line-height: 1.7;
-    margin-bottom: 15px;
-}
-
-/* ANIMATION */
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
     }
 }
