@@ -1,118 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>SentiR-Corpora</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="home">
 
-<!-- HEADER -->
-<header class="header">
-    <h1>SentiR-Corpora</h1>
-    <p>Corpus-Based Computational Linguistics Research Portal</p>
-</header>
+<div class="container">
 
-<!-- NAV -->
-<nav>
-    <a href="#stats">Stats</a>
-    <a href="#search">Search</a>
-    <a href="#dataset">Dataset</a>
-    <a href="#contributors">Team</a>
-    <a href="#license">License</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <h1 class="fade">SentiR-Corpora</h1>
 
-<!-- STATS DASHBOARD -->
-<section id="stats" class="card stats">
-    <h2>Corpus Statistics</h2>
+    <p class="fade">
+        Corpus-Based Computational Linguistics Research Portal
+    </p>
 
-    <div class="grid">
-        <div class="box">Total Documents<br><strong>10,000+</strong></div>
-        <div class="box">Tokens<br><strong>1.2M+</strong></div>
-        <div class="box">Categories<br><strong>3</strong></div>
-        <div class="box">Languages<br><strong>English</strong></div>
-    </div>
-</section>
-
-<!-- SEARCH -->
-<section id="search" class="card search">
-    <h2>Search Corpus</h2>
-    <input type="text" id="searchBox" placeholder="Search dataset keywords...">
-    <p id="searchInfo">Type to filter dataset categories below.</p>
-</section>
-
-<!-- DATASET -->
-<section id="dataset" class="card dataset">
-    <h2>Dataset Access</h2>
-
-    <p>Click below to access full corpus dataset:</p>
-
-    <a class="button"
-       href="https://drive.google.com/drive/folders/10BAYS40cvt1Mtr0ct3PJsQWyzs6paw-S?usp=sharing"
-       target="_blank">
-       Open Google Drive Corpus
-    </a>
-
-    <h3>Corpus Categories</h3>
-    <ul>
-        <li>News Articles Corpus</li>
-        <li>Social Media Corpus</li>
-        <li>Product Reviews Corpus</li>
-    </ul>
-</section>
-
-<!-- CONTRIBUTORS -->
-<section id="contributors" class="card team">
-    <h2>Research Team</h2>
-
-    <div class="person">
-        <h3>Principal Investigator</h3>
+    <!-- ONLY TWO THINGS ON HOME -->
+    <div class="card fade">
+        <h2>About</h2>
         <p>
-            Dr. Saqlain Hassan<br>
-            Assistant Professor, Riphah International University<br>
-            saqlain.hassan@riphah.edu.pk
+            SentiR-Corpora is a computational corpus for sentiment analysis and linguistic research.
         </p>
     </div>
 
-    <div class="person">
-        <h3>Assistant Researcher</h3>
-        <p>
-            Riffat Nazeer<br>
-            riffatnazeerahmad@gmail.com
-        </p>
+    <div class="card fade">
+        <h2>Contributors</h2>
+        <p><b>PI:</b> Dr. Saqlain Hassan</p>
+        <p><b>Assistant:</b> Riffat Nazeer</p>
     </div>
-</section>
 
-<!-- LICENSE -->
-<section id="license" class="card license">
-    <h2>License</h2>
-    <p>
-        © 2026 SentiR-Corpora. This corpus is protected under academic copyright.
-        Unauthorized copying, redistribution, or commercial use is prohibited.
-        Proper citation required.
-    </p>
-</section>
+    <!-- NAVIGATION ONLY -->
+    <div class="nav">
+        <a href="dataset.html">Dataset</a>
+        <a href="license.html">License</a>
+        <a href="contact.html">Contact</a>
+    </div>
 
-<!-- CONTACT -->
-<section id="contact" class="card contact">
-    <h2>Contact</h2>
-    <p>
-        Dr. Saqlain Hassan<br>
-        saqlain.hassan@riphah.edu.pk
-    </p>
-    <p>
-        Riffat Nazeer<br>
-        riffatnazeerahmad@gmail.com
-    </p>
-</section>
-
-<footer>
-    <p>© 2026 SentiR-Corpora | Corpus Research Portal</p>
-</footer>
-
-<script src="script.js"></script>
+</div>
 
 </body>
 </html>
