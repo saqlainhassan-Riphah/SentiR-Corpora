@@ -4,17 +4,17 @@ body {
     background: #fff;
 }
 
-/* 🔶 MAIN DASHBOARD HEADER (ONLY ORANGE) */
-.main-header {
+/* HEADER */
+.header {
     background: orange;
     color: white;
     text-align: center;
     padding: 30px;
 }
 
-/* NAVIGATION */
+/* NAV */
 nav {
-    background: #333;
+    background: #222;
     text-align: center;
     padding: 10px;
 }
@@ -23,46 +23,56 @@ nav a {
     color: white;
     margin: 10px;
     text-decoration: none;
-    font-weight: bold;
 }
 
 nav a:hover {
     color: orange;
 }
 
-/* GENERAL CARD STYLE */
+/* CARDS */
 .card {
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
 }
 
-/* INNER SECTION COLORS (ONLY INSIDE CONTENT) */
-.about { background: #ffe8cc; }       /* light orange */
-.dataset { background: #fff3cd; }     /* light yellow */
-.contributors { background: #d4f7d4; }/* light green */
-.license { background: #d6d6ff; }     /* light purple */
-.contact { background: #cce5ff; }     /* light blue */
+/* SECTIONS */
+.stats { background: #fff3e0; }
+.search { background: #e8f5e9; }
+.dataset { background: #e3f2fd; }
+.team { background: #f3e5f5; }
+.license { background: #ede7f6; }
+.contact { background: #e0f7fa; }
+
+/* STATS GRID */
+.grid {
+    display: flex;
+    gap: 10px;
+}
+
+.box {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
 
 /* BUTTON */
 .button {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 10px;
     background: orange;
     color: white;
     text-decoration: none;
     border-radius: 5px;
 }
 
-.button:hover {
-    background: darkorange;
-}
-
 /* FOOTER */
 footer {
     text-align: center;
-    background: #222;
+    background: #111;
     color: white;
     padding: 10px;
-    padding: 12px;
 }
