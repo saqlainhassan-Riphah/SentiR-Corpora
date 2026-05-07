@@ -1,73 +1,68 @@
+/* GENERAL RESET */
 body {
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
-    background: #f4f6f9;
-    text-align: center;
+    background: #f57c00; /* ORANGE DASHBOARD */
+    color: #333;
 }
 
 /* HEADER */
 .header {
-    background: linear-gradient(135deg, #d67a00, #f2b36a);
+    text-align: center;
+    padding: 40px 20px;
     color: white;
-    padding: 25px;
 }
 
-/* NAV */
+.header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.header p {
+    font-size: 1.1em;
+    opacity: 0.95;
+}
+
+/* CONTENT BOXES */
+.box {
+    background: #ffffff;
+    margin: 25px auto;
+    padding: 25px;
+    max-width: 850px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* VISITOR BOX (SUBTLE DIFFERENCE) */
+.visitor-box {
+    text-align: center;
+    background: #fff3e0;
+}
+
+.visitor-box span {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #e65100;
+}
+
+/* NAVIGATION */
 .nav {
-    background: #1f2937;
-    padding: 10px;
+    text-align: center;
+    margin: 40px 0;
 }
 
 .nav a {
-    color: white;
-    margin: 10px;
     text-decoration: none;
-    padding: 8px 12px;
+    background: white;
+    color: #e65100;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 30px;
+    font-weight: bold;
     display: inline-block;
-    border-radius: 5px;
+    transition: 0.3s ease;
 }
 
 .nav a:hover {
-    background: orange;
-    color: black;
-}
-
-/* STATS */
-.stats {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 20px;
-}
-
-.stat-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 150px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-}
-
-/* BOXES */
-.box {
-    background: white;
-    margin: 20px auto;
-    padding: 20px;
-    width: 70%;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-}
-
-/* BUTTON */
-.button {
-    background: orange;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 8px;
-    display: inline-block;
-}
-
-.button:hover {
-    background: #cc6f00;
+    background: #ffe0b2;
 }

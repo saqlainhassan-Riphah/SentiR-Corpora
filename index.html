@@ -10,7 +10,7 @@
 
 <!-- HEADER -->
 <div class="header">
-    <h1>SentiR-Corpora Database</h1>
+    <h1>SentiR-Corpora</h1>
     <p>Computational Linguistics Corpus System</p>
 </div>
 
@@ -19,7 +19,7 @@
     <h2>About</h2>
     <p>
         SentiR-Corpora is a computational linguistics corpus designed for sentiment analysis,
-        discourse analysis, and NLP research.
+        discourse analysis, and natural language processing research.
     </p>
 </div>
 
@@ -28,14 +28,25 @@
     <h2>Contributors</h2>
 
     <p>
-        <b>Principal Investigator:</b><br>
+        <strong>Principal Investigator</strong><br>
         Dr. Saqlain Hassan<br>
-        Assistant Professor, Riphah International University
+        Assistant Professor, Department of English Linguistics and Literature<br>
+        Riphah International University, Pakistan
     </p>
 
     <p>
-        <b>Assistant Researcher:</b><br>
-        Riffat Nazeer
+        <strong>Assistant Researcher</strong><br>
+        Riffat Nazeer<br>
+        Computational & Corpus Linguist
+    </p>
+</div>
+
+<!-- VISITOR COUNTER -->
+<div class="box visitor-box">
+    <h2>Visitor Statistics</h2>
+    <p>
+        Total visits to SentiR-Corpora:
+        <span id="visitor-count">Loading...</span>
     </p>
 </div>
 
@@ -45,6 +56,18 @@
     <a href="license.html">License</a>
     <a href="contact.html">Contact</a>
 </div>
+
+<!-- REAL-TIME VISITOR SCRIPT -->
+<script>
+fetch("https://api.countapi.xyz/hit/sentir-corpora/visits")
+  .then(res => res.json())
+  .then(data => {
+      document.getElementById("visitor-count").innerText = data.value;
+  })
+  .catch(() => {
+      document.getElementById("visitor-count").innerText = "Unavailable";
+  });
+</script>
 
 </body>
 </html>
