@@ -1,12 +1,17 @@
-/* GLOBAL */
-body {
+/* RESET */
+* {
     margin: 0;
-    font-family: "Poppins", "Segoe UI", sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
     background: linear-gradient(135deg, #1e293b, #0f172a);
     color: #e2e8f0;
 }
 
-/* CONTAINER */
+/* HOME LAYOUT */
 .container {
     max-width: 1100px;
     margin: auto;
@@ -16,7 +21,7 @@ body {
 
 /* HEADER */
 .header h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: #f59e0b;
 }
 
@@ -25,35 +30,25 @@ body {
     margin-bottom: 40px;
 }
 
-/* GRID LAYOUT */
+/* GRID */
 .grid {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     gap: 20px;
-    align-items: stretch;
 }
 
-/* BOX STYLES */
 .side-box, .center-box {
     background: rgba(255,255,255,0.05);
     padding: 25px;
     border-radius: 15px;
-    backdrop-filter: blur(8px);
-    transition: 0.3s ease;
+    backdrop-filter: blur(10px);
 }
 
-.side-box:hover, .center-box:hover {
-    transform: translateY(-5px);
-    background: rgba(255,255,255,0.08);
-}
-
-/* CENTER ABOUT BOX */
 .center-box {
-    font-size: 1.1rem;
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
-/* NAVIGATION */
+/* NAV */
 .nav {
     margin-top: 40px;
 }
@@ -73,9 +68,39 @@ body {
     color: #0f172a;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
+/* INNER PAGES */
+.page-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    color: #f59e0b;
+    margin-bottom: 20px;
+}
+
+.page-card {
+    background: rgba(255,255,255,0.08);
+    padding: 30px;
+    border-radius: 18px;
+    margin-top: 20px;
+}
+
+.page-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 18px;
+    border-radius: 25px;
+    border: 1px solid #f59e0b;
+    color: #f59e0b;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.page-btn:hover {
+    background: #f59e0b;
+    color: #0f172a;
 }
