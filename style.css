@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+}
+
+/* 🔶 MAIN DASHBOARD HEADER (ONLY ORANGE) */
+.main-header {
+    background: orange;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* NAVIGATION */
+nav {
+    background: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+/* GENERAL CARD STYLE */
+.card {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* INNER SECTION COLORS (ONLY INSIDE CONTENT) */
+.about { background: #ffe8cc; }       /* light orange */
+.dataset { background: #fff3cd; }     /* light yellow */
+.contributors { background: #d4f7d4; }/* light green */
+.license { background: #d6d6ff; }     /* light purple */
+.contact { background: #cce5ff; }     /* light blue */
+
+/* BUTTON */
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    background: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background: darkorange;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 10px;
+    padding: 12px;
+}
