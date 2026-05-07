@@ -1,15 +1,16 @@
 body {
     margin: 0;
-    font-family: Arial;
-    background: #f5f5f5;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
 }
 
-/* HEADER */
+/* 🟧 HEADER (RESTORED ORANGE IDENTITY) */
 .header {
-    background: #d67a00;
+    background: linear-gradient(135deg, #d67a00, #f2b36a);
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 30px;
 }
 
 /* SEARCH */
@@ -25,10 +26,11 @@ body {
     border: 1px solid #ccc;
 }
 
-/* STATS */
+/* 📊 STATS CENTERED AGAIN */
 .stats {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 15px;
     margin: 20px;
 }
@@ -37,13 +39,16 @@ body {
     background: white;
     padding: 15px;
     border-radius: 10px;
+    min-width: 150px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
-/* DATASET GRID */
+/* 📁 DATASET CARDS (CENTERED AGAIN) */
 .dataset-grid {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 15px;
     margin: 20px;
 }
@@ -56,16 +61,26 @@ body {
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     cursor: pointer;
     transition: 0.3s;
+    text-align: center;
 }
 
 .dataset-card:hover {
     transform: scale(1.05);
 }
 
-/* INFO */
+/* INFO BOXES CENTERED */
 .info {
     background: white;
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
+    width: 70%;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* BUTTON LINK */
+a {
+    text-decoration: none;
+    color: #d67a00;
+    font-weight: bold;
 }
