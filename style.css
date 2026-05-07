@@ -2,85 +2,72 @@ body {
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
     background: #f4f6f9;
-    color: #333;
+    text-align: center;
 }
 
-/* 🟧 HEADER (RESTORED ORANGE IDENTITY) */
+/* HEADER */
 .header {
     background: linear-gradient(135deg, #d67a00, #f2b36a);
     color: white;
-    text-align: center;
-    padding: 30px;
+    padding: 25px;
 }
 
-/* SEARCH */
-.search-box {
-    text-align: center;
-    margin: 20px;
-}
-
-.search-box input {
-    width: 60%;
+/* NAV */
+.nav {
+    background: #1f2937;
     padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
 }
 
-/* 📊 STATS CENTERED AGAIN */
+.nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.nav a:hover {
+    background: orange;
+    color: black;
+}
+
+/* STATS */
 .stats {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 15px;
     margin: 20px;
 }
 
 .stat-card {
     background: white;
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
-    min-width: 150px;
+    width: 150px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    text-align: center;
 }
 
-/* 📁 DATASET CARDS (CENTERED AGAIN) */
-.dataset-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin: 20px;
-}
-
-.dataset-card {
-    background: white;
-    width: 250px;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    cursor: pointer;
-    transition: 0.3s;
-    text-align: center;
-}
-
-.dataset-card:hover {
-    transform: scale(1.05);
-}
-
-/* INFO BOXES CENTERED */
-.info {
+/* BOXES */
+.box {
     background: white;
     margin: 20px auto;
     padding: 20px;
-    border-radius: 10px;
     width: 70%;
+    border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
-/* BUTTON LINK */
-a {
+/* BUTTON */
+.button {
+    background: orange;
+    color: white;
+    padding: 10px 15px;
     text-decoration: none;
-    color: #d67a00;
-    font-weight: bold;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.button:hover {
+    background: #cc6f00;
 }
