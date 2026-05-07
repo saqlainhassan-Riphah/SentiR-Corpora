@@ -1,0 +1,12 @@
+{
+  "dataset1": {
+    "name": "Corpus Drive 1",
+    "size_docs": 10000,
+    "tokens": 1200000
+  },
+  "dataset2": {
+    "name": "Corpus Drive 2",
+    "size_docs": 0,
+    "tokens": 0
+  }
+}

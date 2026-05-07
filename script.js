@@ -1,14 +1,14 @@
-document.getElementById("searchInput").addEventListener("keyup", function() {
-    let filter = this.value.toLowerCase();
-    let cards = document.querySelectorAll(".dataset-card");
+fetch("data.json")
+  .then(response => response.json())
+  .then(data => {
 
-    cards.forEach(card => {
-        let text = card.getAttribute("data-type");
+    document.getElementById("d1_docs").innerText = data.dataset1.size_docs;
+    document.getElementById("d1_tokens").innerText = data.dataset1.tokens;
 
-        if (text.includes(filter)) {
-            card.style.display = "block";
-        } else {
-            card.style.display = "none";
-        }
-    });
-});
+    document.getElementById("d2_docs").innerText = data.dataset2.size_docs;
+    document.getElementById("d2_tokens").innerText = data.dataset2.tokens;
+
+  })
+  .catch(error => {
+    console.log("Data loading error:", error);
+  });
