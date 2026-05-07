@@ -2,35 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SentiR-Corpora Database</title>
+    <title>SentiR-Corpora</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- FLOWING BACKGROUND SHAPES -->
+<div class="flow flow1"></div>
+<div class="flow flow2"></div>
+
 <!-- HEADER -->
-<div class="header">
-    <h1>SentiR-Corpora</h1>
-    <p>Computational Linguistics Corpus System</p>
-</div>
+<header class="header">
+    <h1 class="fade-in">SentiR-Corpora</h1>
+    <p class="fade-in delay">
+        Computational Linguistics Corpus Repository
+    </p>
+</header>
 
 <!-- ABOUT -->
-<div class="box">
+<section class="box fade-up">
     <h2>About</h2>
     <p>
-        SentiR-Corpora is a computational linguistics corpus designed for sentiment analysis,
-        discourse analysis, and natural language processing research.
+        SentiR-Corpora is an academic corpus repository designed to support
+        sentiment analysis, discourse studies, and computational linguistics
+        research. The database provides structured and curated corpora
+        for scholarly use.
     </p>
-</div>
+</section>
 
 <!-- CONTRIBUTORS -->
-<div class="box">
+<section class="box fade-up delay">
     <h2>Contributors</h2>
 
     <p>
         <strong>Principal Investigator</strong><br>
         Dr. Saqlain Hassan<br>
-        Assistant Professor, Department of English Linguistics and Literature<br>
+        Assistant Professor<br>
+        Department of English Linguistics & Literature<br>
         Riphah International University, Pakistan
     </p>
 
@@ -39,35 +48,35 @@
         Riffat Nazeer<br>
         Computational & Corpus Linguist
     </p>
-</div>
+</section>
 
-<!-- VISITOR COUNTER -->
-<div class="box visitor-box">
-    <h2>Visitor Statistics</h2>
-    <p>
-        Total visits to SentiR-Corpora:
-        <span id="visitor-count">Loading...</span>
-    </p>
-</div>
+<!-- VISUAL CORPUS INDICATORS (ANIMATED, NOT STATS) -->
+<section class="visuals fade-up delay2">
+    <div class="visual-card">
+        <div class="pulse"></div>
+        <h3>Curated Corpora</h3>
+        <p>Research-grade linguistic datasets</p>
+    </div>
+
+    <div class="visual-card">
+        <div class="pulse"></div>
+        <h3>Academic Access</h3>
+        <p>Designed for scholarly research</p>
+    </div>
+
+    <div class="visual-card">
+        <div class="pulse"></div>
+        <h3>Corpus Linguistics</h3>
+        <p>Structured & analyzable data</p>
+    </div>
+</section>
 
 <!-- NAVIGATION -->
-<div class="nav">
+<nav class="nav fade-in delay2">
     <a href="dataset.html">Dataset</a>
     <a href="license.html">License</a>
     <a href="contact.html">Contact</a>
-</div>
-
-<!-- REAL-TIME VISITOR SCRIPT -->
-<script>
-fetch("https://api.countapi.xyz/hit/sentir-corpora/visits")
-  .then(res => res.json())
-  .then(data => {
-      document.getElementById("visitor-count").innerText = data.value;
-  })
-  .catch(() => {
-      document.getElementById("visitor-count").innerText = "Unavailable";
-  });
-</script>
+</nav>
 
 </body>
 </html>
